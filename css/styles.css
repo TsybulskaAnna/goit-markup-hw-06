@@ -313,6 +313,25 @@ img {
   width: 30px;
   height: 30px;
 }
+
+.textarea{
+  resize: none;
+}
+.modal-form {
+  margin: 40px;
+ 
+}
+.modal-text{
+  margin-bottom: 30px;
+  font-size: 700;
+  color: rgba(33, 33, 33, 1);
+}
+.form-text{
+  padding-bottom: 28px;
+ text-align: left;
+  display: flex;
+  flex-direction: column;
+}
 /* Section */
 
 .section {
