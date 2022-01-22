@@ -76,18 +76,25 @@
                   Оставьте свои данные, мы вам перезвоним
                 </h2>
                 <form class="form-text">
-                  <label for="name">Имя</label>
-                  <input type="text" name="name" id="name" />
-                  <label for="tel">Телефон</label>
-                  <input type="tel" name="tel" id="tel" />
-                  <label for="email">Почта</label>
-                  <input type="email" name="email" id="email" />
-                  <label for="comment">Комментарий</label>
-                  <textarea name="comment" cols="30" rows="10" id="comment" placeholder="Введите текст"
-                  ></textarea>
-                  <input type="checkbox"  name="checkbox" value="" id="checkbox" />
-                  <label for="checkbox" >Соглашаюсь с рассылкой и принимаю
-                    <a href="" class="modal-link">Условия договора</a></label>
+                  <label>Имя <input type="text" name="name" />
+                    <svg>
+                      <use href="./images/sprite.svg#icon-person-black" width="12" height="12"></use>
+                    </svg>
+                  </label>
+                  <label>Телефон<input type="tel" name="tel" />
+                    <svg>
+                      <use href="./images/sprite.svg#icon-phone-black" width="12" height="12"></use>
+                    </svg></label>
+                  <label>Почта <input type="email" name="email" /><svg>
+                    <use href="./images/sprite.svg#icon-email-black" width="12" height="12"></use>
+                  </svg></label>
+                  <label>Комментарий<textarea placeholder="Введите текст"></textarea>
+                  </label>
+                  <div>
+                    <label><input type="checkbox" name="checkbox" value="" />
+                      Соглашаюсь с рассылкой и принимаю
+                      <a href="" class="modal-link">Условия договора</a></label>
+                  </div>
                 </form>
                 <button class="button-submit" type="submit">Отправить</button>
               </div>
@@ -450,6 +457,17 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscription">
+          <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+          <div class="subscription-email">
+          <label><input class="email" type="email" name="email"  placeholder="E-mail" /></label>  
+          <button class="button-email">Подписаться
+            <svg class="subscription-icon">
+              <use href="./images/sprite.svg#icon-icon-send" width="24" height="24"></use>
+            </svg>
+          </button>
+        </div>
         </div>
       </div>
     </footer>

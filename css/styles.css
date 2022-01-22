@@ -123,12 +123,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.current::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
   height: 4px;
-  background-color:var(--icon-accent-color);
+  background-color: var(--icon-accent-color);
   border-radius: 2px;
   bottom: 0;
 }
@@ -198,7 +198,6 @@ img {
   align-items: center;
   justify-content: center;
   margin-left: auto;
-  
 }
 
 .contact-nav .contact-text {
@@ -296,7 +295,7 @@ img {
   fill: var(--logo-second-color);
 }
 .button-close:hover .button-close-img,
-.button-close:focus .button-close-img{
+.button-close:focus .button-close-img {
   fill: var(--icon-accent-color);
 }
 .button-close {
@@ -314,23 +313,36 @@ img {
   height: 30px;
 }
 
-.textarea{
+.textarea {
   resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .modal-form {
   margin: 40px;
- 
 }
-.modal-text{
+.modal-text {
   margin-bottom: 30px;
-  font-size: 700;
+  font-weight: 700;
   color: rgba(33, 33, 33, 1);
 }
-.form-text{
+.form-text {
+  font-weight: 400;
   padding-bottom: 28px;
- text-align: left;
+  text-align: left;
   display: flex;
   flex-direction: column;
+}
+.button-submit {
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--icon-accent-color);
+  color: var(--icon-secondary-color);
+  width: 200px;
+  height: 50px;
 }
 /* Section */
 
@@ -581,7 +593,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 .socials-icon-footer {
   display: flex;
@@ -620,7 +631,51 @@ img {
 .teams-links-icons:not(:last-child) {
   margin-right: 10px;
 }
-
+.subscription {
+  color: var(--icon-secondary-color);
+  margin-right:auto;
+  margin-left: 93px;
+}
+.subscription-email {
+  display: flex;
+  
+}
+.email {
+  width: 358px;
+  height: 50px;
+  background-color: var(--fon-section-first-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+}
+.button-email {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--icon-accent-color);
+  color: var(--icon-secondary-color);
+  border: 0;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.subscription-icon {
+  position: absolute;
+  fill: var(--icon-secondary-color);
+  padding-left: 10px;
+}
+.subscription-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--icon-secondary-color);
+  text-transform: uppercase;
+  margin-left: 154px;
+  
+}
 /* Стили для файла portfolio.html */
 .button-title {
   color: var(--primary-text-color);
@@ -634,7 +689,7 @@ img {
   border-radius: 4px;
   min-width: 73px;
   padding: 6px;
-  transition-property: background-color,box-shadow;
+  transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
